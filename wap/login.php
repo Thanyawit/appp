@@ -22,15 +22,12 @@ $result = mysqli_query($conn, $sql);
 if(mysqli_num_rows($result) == 1) { // Login OK
 
     $row = mysqli_fetch_assoc($result);
+    $_SESSION['username'] = $row['username'];
 
-    $_SESSION['user'] = $row['username'];
-    $_SESSION['e'] = $row['email'];
-
-
-    header("Location:ei.html");
+    header("Location:ei.php");
 }
 else {
-    header("Location:log.html");
+    header("Location:log.php");
 }
 
 
