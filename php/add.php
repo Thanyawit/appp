@@ -5,7 +5,7 @@ $ufname = $_REQUEST['fname_user'];
 $ulname = $_REQUEST['lname_user'];
 $upass = $_REQUEST['user_pass'];
 $utell = $_REQUEST['user_tell'];
-$status = $_REQUEST['status_ID'];
+$status = "2";
 
 //เช็ค user ผู้สมัครว่าซ้ำไหม
 $check = "SELECT * FROM datauser  WHERE  user = '$u'";

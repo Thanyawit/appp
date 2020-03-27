@@ -11,14 +11,10 @@
     <h1>Register</h1>
     <form action="add.php">
         <h2>user:<input type="text" name="user" pattern="[A-Z]{1}[a-z]{5,20}" title="อักษรตัวพิมพ์ใหญ่ขึ้นก่อน อย่างน้อย 6 ตัว" required/></h2>
+        <h2>รหัส:<input type="password" name="user_pass" pattern="[0-9]{8,20}" title="กรุณาใส่ตัวเลข!!!!" required/></h2>
         <h2>ชื่อ:<input type="text" name="fname_user" required/></h2>
         <h2>นามสกุล:<input type="text" name="lname_user" required/></h2>
-        <h2>รหัส<input type="password" name="user_pass" pattern="[0-9]{8,20}" title="กรุณาใส่ตัวเลข!!!!" required/></h2>
         <h2>เบอร์โทร:<input type="number" name="user_tell" required/></h2>
-        <h2>status:<select name="status_ID">
-            <option>กรุณาเลือก</option>
-            <option value="2">user</option>
-          </select></h2>
         <input type="submit" name="submit" value="สมัคร"/>
     </form>
     <a href="login.php"><input type="submit" value="ย้อนกลับ"</a>
