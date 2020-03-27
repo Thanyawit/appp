@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+      function random() {
+      var x = 1; 
+      x = Math.floor(Math.random() * 4);
+      if(x == 1){
+        document.myform.message.value += "1 . จงใส่ค่า a และ b ให้ได้เท่ากับ 36";
+        function add(a, b){
+        return v = a + b;
+      }
+    }
+      else if(x == 2){
+        document.myform.message.value += "2 . จงใส่ค่า a และ b ให้ได้เท่ากับ 35";
+      }
+      else{
+        document.myform.message.value += "3 . ถ้า ใช้คำสั่ง let  x จะมีค่าเท่ากับเท่าไร";
+      }
+    }
+  
+    
+
+
+
+  </script>
+
+  <form name="myform">
+  <center>
+    <textarea name="message" style="padding:80px 90px;height:40px;font-size: 25px;">
+
+    </textarea>
+    <br>
+    <button type="button" onclick="random();">Random Macro</button>
+    <input type="reset" value="Clear">
+  </form><br>
+
+  <input type="text" name="a" placeholder="ค่า a">
+  <input type="text" name="b" placeholder="ค่า b">
+  <button type="button" onclick="add(a,b);">ส่งค่า</button>
+</center>
+</body>
+</html>

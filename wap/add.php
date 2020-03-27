@@ -17,6 +17,6 @@
 }
 
 mysqli_close($conn);
-header("Location:log.html");
+header("Location:log.php");
 
 ?>

@@ -1,0 +1,32 @@
+.iCalc{
+    width:100px;
+    display:block;
+    background-color:#666666;
+    font-size:12px;
+    color:#FFFFFF;
+    height:115px;
+}
+.iResult{
+    width:95px;
+    margin-left:2px;
+    margin-top:2px;
+    float:left;
+    height:20px;
+    background-color:#CCCCCC;
+    text-align:left;
+    color:#000000;
+    line-height:20px;
+    text-indent:3px;
+    overflow:hidden;
+}
+div.iDigit > div{
+    display:block;
+    float:left;
+    height:20px;
+    width:20px;
+    text-align:center;
+    margin-left:4px;
+    margin-top:2px;
+    background-color:#000000;
+    cursor:pointer;
+}
