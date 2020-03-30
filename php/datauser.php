@@ -6,7 +6,7 @@ require("server.php");
 $user = $_SESSION['user'];
 $pass = $_SESSION['pass'];
 //select
-$sql = "SELECT * FROM datauser WHERE user='$user' and user_pass='$pass'";
+$sql = "SELECT * FROM datauser WHERE user='$user'";
 //execute
 $result = mysqli_query($con,$sql);
 if(mysqli_num_rows($result)==1){
@@ -16,25 +16,34 @@ if(mysqli_num_rows($result)==1){
 <html>
     <head>
     <link rel="stylesheet" href="body.css">
+    <script>
+    function confirmeiei() {
+        return confirm("Are you sure?");
+    }
+    </script>
+
     </head>
 <body>
 <table border = "1">
-    <form>
+    <form action="update.php">
         <tr>
             <td>user</td>
-            <td><?php echo $row['user']; ?></td>
+            <td><?php echo   "<input type = 'text' name = 'user' value = " .$row['user'] . " readonly>"; ?></td>
         </tr>
         <tr>
             <td>password</td>
-            <td><?php echo $row['user_pass']; ?></td>
+            <td><?php echo "<input type = 'password' name = 'user_pass' value = " .$row['user_pass'] . ">"; ?></td>
         </tr>
         <tr>
             <td>ชื่อ</td>
-            <td><?php echo $row['fname_user']; echo " "; echo $row['lname_user']; ?></td>
+            <td><?php  echo "<input type = 'text' name = 'fname_user' value = " .$row['fname_user'] . ">"; echo " "; echo  "<input type = 'text' name = 'lname_user' value = " .$row['lname_user'] . ">";?></td>
         </tr>
         <tr>
             <td>เบอร์</td>
-            <td><?php echo $row['user_tell']; ?></td>
+            <td><?php echo "<input type = 'text' name = 'user_tell' value = " .$row['user_tell'] . ">"; ?></td>
+        </tr>
+        <tr>
+            <td><?php echo "<td><input type = 'submit' name = 'b' value = 'edit' onClick='return confirmeiei()'></td>";?></td>
         </tr>
 
     </form>

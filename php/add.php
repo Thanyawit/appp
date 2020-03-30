@@ -24,8 +24,10 @@ $num=mysqli_num_rows($result);
 $sql = "INSERT INTO datauser (user, fname_user, lname_user, user_pass, user_tell, status_ID) VALUES ";
 $sql .= "('". $u ."','". $ufname ."','". $ulname ."','". $upass ."','". $utell ."','". $status ."')";
 if (mysqli_query($con, $sql)){
-    echo "New";
-    header("Location:login.php");
+    echo "<script>";
+    echo "alert('สำเร็จการลงทะเบียน');";
+    echo "window.location='login.php';";
+   echo "</script>";
 }else{
     echo "Error";
 }

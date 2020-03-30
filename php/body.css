@@ -104,6 +104,11 @@ body {
 	border-radius: 4px;
 	padding: 10px;
   }
+  input[type=date] {
+	border: 2px solid red;
+	border-radius: 4px;
+	padding: 10px;
+  }
   select{
 		border: 2px solid red;
 		border-radius: 4px;
@@ -146,4 +151,15 @@ body {
   }
   h2{
 	color: rgb(34, 172, 46);
+  }
+  .abcd{
+	text-align: center;
+	height: 300px;
+	width: 600px;
+	margin-left: 40%;
+	margin-top: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+	
+
   }

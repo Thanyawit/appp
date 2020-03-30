@@ -32,7 +32,7 @@ while($row = mysqli_fetch_assoc($result)){
     echo "<td><input type='text' name='user' value = " .$row["user"] .  " readonly></td> ";
     echo "<td><input type='text' name='fname_user' value = ".$row["fname_user"] .  "></td> "; 
     echo "<td><input type='text' name='lname_user' value = " .$row["lname_user"] .  "></td> "; 
-    echo "<td><input type='text' name='user_pass' value = ".$row["user_pass"] .  "></td> "; 
+    echo "<td><input type='password' name='user_pass' value = ".$row["user_pass"] .  "></td> "; 
     echo "<td><input type='text' name='user_tell' value = ".$row["user_tell"] .  "></td> ";
     echo "<td>".$row["status_name"] ."</td> ";  
     echo "<td><input type = 'submit' name = 'a' value = 'edit' ></td>";
@@ -45,8 +45,8 @@ while($row = mysqli_fetch_assoc($result)){
 <div class="pagee">
         <a href="pageadmin.php">ข้อมูลผู้ใช้</a>
         <a href="durable.php">ครุภัณฑ์</a>
-        <a href="datauser.php">ข้อมูลส่วนตัว</a>
-        <a href="logout.php">login</a>
+        <a href="datauser.php">ข้อมูลส่วนตัวAdmin</a>
+        <a href="logout.php">logout</a>
         </div>
         </table>
     </dody>

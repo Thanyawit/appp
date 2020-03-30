@@ -31,10 +31,10 @@ if(!isset($_SESSION['user'])){
         $result = mysqli_query($con,$sql);
         while($row = mysqli_fetch_assoc($result)){
             echo "<tr>";
-            echo "<td>" .$row["durable_ID"] .  " ></td> ";
-            echo "<td>".$row["durable_user"] .  "></td> "; 
-            echo "<td>" .$row["durable_day"] .  "></td> "; 
-            echo "<td>".$row["durablestatus_ID"] .  "></td> "; 
+            echo "<td>" .$row["durable_ID"] .  " </td> ";
+            echo "<td>".$row["durable_name"] .  "</td> "; 
+            echo "<td>" .$row["durable_day"] .  "</td> "; 
+            echo "<td>".$row["durablestatus"] .  "</td> "; 
             echo "</tr>";
             }
         ?>
